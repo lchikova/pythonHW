@@ -9,5 +9,6 @@ def fizz_buzz(n):
         else:
             print(i)
 
+
 n = int(input("Введите число: "))
 fizz_buzz(n)
