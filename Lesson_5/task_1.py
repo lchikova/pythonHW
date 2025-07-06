@@ -17,4 +17,5 @@ alert = Alert(driver)
 sleep(2)
 alert.accept()
 sleep(2)
+
 driver.quit()
