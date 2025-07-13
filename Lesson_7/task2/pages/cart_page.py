@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from .checkout_page import CheckoutPage
 
 
 class CartPage:
@@ -10,5 +11,4 @@ class CartPage:
         self.driver.find_element(
             *self.checkout_button
         ).click()
-        from Lesson_7.task2.pages.checkout_page import CheckoutPage
         return CheckoutPage(self.driver)

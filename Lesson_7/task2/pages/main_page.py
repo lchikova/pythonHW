@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+from .cart_page import CartPage
 
 class MainPage:
     def __init__(self, driver):
@@ -15,5 +15,4 @@ class MainPage:
 
     def go_to_cart(self):
         self.driver.find_element(*self.cart_button).click()
-        from Lesson_7.task2.pages.cart_page import CartPage
         return CartPage(self.driver)

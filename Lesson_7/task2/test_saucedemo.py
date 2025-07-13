@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from pages.login_page import LoginPage
+from .pages.login_page import LoginPage
 
 
 @pytest.fixture

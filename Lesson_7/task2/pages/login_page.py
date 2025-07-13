@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+from .main_page import MainPage
 
 class LoginPage:
     def __init__(self, driver):
@@ -22,5 +22,4 @@ class LoginPage:
 
     def click_login(self):
         self.driver.find_element(*self.login_button).click()
-        from Lesson_7.task2.pages.main_page import MainPage
         return MainPage(self.driver)
